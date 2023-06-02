@@ -48,10 +48,10 @@
             this.tb_persone = new System.Windows.Forms.TextBox();
             this.btn_Fpers = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.tb_pr = new System.Windows.Forms.TextBox();
             this.txt_tavolo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_elimina = new System.Windows.Forms.Button();
+            this.lbl_user = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +62,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(358, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(561, 63);
+            this.label1.Size = new System.Drawing.Size(447, 51);
             this.label1.TabIndex = 0;
             this.label1.Text = "SETAI CLUB☆☆☆☆☆L";
             // 
@@ -74,7 +74,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(56, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 29);
+            this.label2.Size = new System.Drawing.Size(62, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nome";
             // 
@@ -83,7 +83,7 @@
             this.tb_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.tb_nome.Location = new System.Drawing.Point(191, 136);
             this.tb_nome.Name = "tb_nome";
-            this.tb_nome.Size = new System.Drawing.Size(110, 27);
+            this.tb_nome.Size = new System.Drawing.Size(110, 23);
             this.tb_nome.TabIndex = 2;
             // 
             // tb_tel
@@ -91,7 +91,7 @@
             this.tb_tel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.tb_tel.Location = new System.Drawing.Point(191, 173);
             this.tb_tel.Name = "tb_tel";
-            this.tb_tel.Size = new System.Drawing.Size(110, 27);
+            this.tb_tel.Size = new System.Drawing.Size(110, 23);
             this.tb_tel.TabIndex = 4;
             // 
             // label3
@@ -102,7 +102,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(56, 172);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 29);
+            this.label3.Size = new System.Drawing.Size(85, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Telefono";
             // 
@@ -111,7 +111,7 @@
             this.tb_tavolo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.tb_tavolo.Location = new System.Drawing.Point(191, 284);
             this.tb_tavolo.Name = "tb_tavolo";
-            this.tb_tavolo.Size = new System.Drawing.Size(110, 27);
+            this.tb_tavolo.Size = new System.Drawing.Size(110, 23);
             this.tb_tavolo.TabIndex = 6;
             // 
             // label4
@@ -122,7 +122,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(56, 283);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 29);
+            this.label4.Size = new System.Drawing.Size(67, 24);
             this.label4.TabIndex = 5;
             this.label4.Text = "Tavolo";
             // 
@@ -134,7 +134,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(56, 321);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 29);
+            this.label5.Size = new System.Drawing.Size(105, 24);
             this.label5.TabIndex = 7;
             this.label5.Text = "N. Persone";
             // 
@@ -143,7 +143,7 @@
             this.tb_portate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.tb_portate.Location = new System.Drawing.Point(191, 363);
             this.tb_portate.Name = "tb_portate";
-            this.tb_portate.Size = new System.Drawing.Size(110, 27);
+            this.tb_portate.Size = new System.Drawing.Size(110, 23);
             this.tb_portate.TabIndex = 12;
             // 
             // label6
@@ -154,7 +154,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(56, 362);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(120, 29);
+            this.label6.Size = new System.Drawing.Size(92, 24);
             this.label6.TabIndex = 11;
             this.label6.Text = "N. Portate";
             // 
@@ -178,7 +178,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(61, 232);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 29);
+            this.label7.Size = new System.Drawing.Size(54, 24);
             this.label7.TabIndex = 14;
             this.label7.Text = "Zona";
             // 
@@ -186,10 +186,10 @@
             // 
             this.lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.lb.FormattingEnabled = true;
-            this.lb.ItemHeight = 24;
+            this.lb.ItemHeight = 18;
             this.lb.Location = new System.Drawing.Point(583, 136);
             this.lb.Name = "lb";
-            this.lb.Size = new System.Drawing.Size(584, 340);
+            this.lb.Size = new System.Drawing.Size(584, 328);
             this.lb.TabIndex = 15;
             // 
             // btn_visual
@@ -224,7 +224,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(61, 422);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 29);
+            this.label8.Size = new System.Drawing.Size(35, 24);
             this.label8.TabIndex = 18;
             this.label8.Text = "PR";
             // 
@@ -233,7 +233,7 @@
             this.tb_persone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.tb_persone.Location = new System.Drawing.Point(191, 322);
             this.tb_persone.Name = "tb_persone";
-            this.tb_persone.Size = new System.Drawing.Size(110, 27);
+            this.tb_persone.Size = new System.Drawing.Size(110, 23);
             this.tb_persone.TabIndex = 8;
             // 
             // btn_Fpers
@@ -256,24 +256,16 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(51, 620);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(197, 29);
+            this.label9.Size = new System.Drawing.Size(153, 24);
             this.label9.TabIndex = 20;
             this.label9.Text = "Inserisci persone";
-            // 
-            // tb_pr
-            // 
-            this.tb_pr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.tb_pr.Location = new System.Drawing.Point(191, 424);
-            this.tb_pr.Name = "tb_pr";
-            this.tb_pr.Size = new System.Drawing.Size(110, 27);
-            this.tb_pr.TabIndex = 21;
             // 
             // txt_tavolo
             // 
             this.txt_tavolo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.txt_tavolo.Location = new System.Drawing.Point(138, 569);
             this.txt_tavolo.Name = "txt_tavolo";
-            this.txt_tavolo.Size = new System.Drawing.Size(110, 27);
+            this.txt_tavolo.Size = new System.Drawing.Size(110, 23);
             this.txt_tavolo.TabIndex = 23;
             // 
             // label10
@@ -284,7 +276,7 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(51, 570);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(87, 29);
+            this.label10.Size = new System.Drawing.Size(67, 24);
             this.label10.TabIndex = 22;
             this.label10.Text = "Tavolo";
             // 
@@ -300,17 +292,30 @@
             this.btn_elimina.UseVisualStyleBackColor = false;
             this.btn_elimina.Click += new System.EventHandler(this.btn_elimina_Click);
             // 
+            // lbl_user
+            // 
+            this.lbl_user.AutoSize = true;
+            this.lbl_user.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_user.ForeColor = System.Drawing.Color.White;
+            this.lbl_user.Location = new System.Drawing.Point(187, 422);
+            this.lbl_user.Name = "lbl_user";
+            this.lbl_user.Size = new System.Drawing.Size(61, 24);
+            this.lbl_user.TabIndex = 25;
+            this.lbl_user.Text = "USER";
+            this.lbl_user.Click += new System.EventHandler(this.lbl_user_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1198, 678);
+            this.ClientSize = new System.Drawing.Size(1198, 679);
+            this.Controls.Add(this.lbl_user);
             this.Controls.Add(this.btn_elimina);
             this.Controls.Add(this.txt_tavolo);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.tb_pr);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btn_Fpers);
             this.Controls.Add(this.label8);
@@ -336,6 +341,7 @@
             this.MinimumSize = new System.Drawing.Size(1214, 718);
             this.Name = "Form1";
             this.Text = "SETAI";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,10 +368,10 @@
         private System.Windows.Forms.TextBox tb_persone;
         private System.Windows.Forms.Button btn_Fpers;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox tb_pr;
         private System.Windows.Forms.TextBox txt_tavolo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btn_elimina;
+        private System.Windows.Forms.Label lbl_user;
     }
 }
 

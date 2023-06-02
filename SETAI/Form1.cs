@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static SETAI.funzioni;
+using static SETAI.Form3;
+using System.Security.Cryptography.X509Certificates;
 
 namespace SETAI
 {
@@ -18,6 +20,7 @@ namespace SETAI
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void btn_inserisci_Click(object sender, EventArgs e)
@@ -118,6 +121,16 @@ namespace SETAI
             MessageBox.Show("Dato eliminato");
 
 
+        }
+
+        private void lbl_user_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lbl_user.Text = Program.UserScelto;
         }
     }
 }

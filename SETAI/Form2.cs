@@ -70,5 +70,35 @@ namespace SETAI
         {
             prive.BackColor = Color.Transparent;
         }
+
+        private void zonay_MouseHover(object sender, EventArgs e)
+        {
+            zonay.BackColor = Color.Blue;
+        }
+
+        private void zonay_MouseLeave(object sender, EventArgs e)
+        {
+            zonay.BackColor = Color.Transparent;
+        }
+
+        private void zonax_MouseHover(object sender, EventArgs e)
+        {
+            zonax.BackColor = Color.Blue;
+        }
+
+        private void zonax_MouseLeave(object sender, EventArgs e)
+        {
+            zonax.BackColor = Color.Transparent;
+        }
+
+        private void zonaz_MouseHover(object sender, EventArgs e)
+        {
+            zonaz.BackColor = Color.Blue;
+        }
+
+        private void zonaz_MouseLeave(object sender, EventArgs e)
+        {
+            zonaz.BackColor = Color.Transparent;
+        }
     }
 }

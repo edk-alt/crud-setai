@@ -8,6 +8,9 @@ namespace SETAI
 {
     internal static class Program
     {
+
+        public static string UserScelto;
+
         /// <summary>
         /// Punto di ingresso principale dell'applicazione.
         /// </summary>

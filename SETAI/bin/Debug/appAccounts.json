@@ -1,32 +1,32 @@
 [
   {
-    "UserName": "edo",
-    "Salt": "i3n7G23hPfEH6yTLEBeLWQ==",
-    "HashPwd": "aOeaWEpz5Ngb3Va3atGOsQoD2bmQz2bPjI/4RDWU2EI=",
+    "UserName": "ciao",
+    "Salt": "KEX3W0WeSftVQqaInxiWQw==",
+    "HashPwd": "vDMU8hIOutyULF8EfSLWkxStm1fQ+N3rp2h8c+bHPSw=",
     "Claims": [
-      "edo"
+      "ciao"
     ],
     "Preferences": {
       "theme": "dark"
     }
   },
   {
-    "UserName": "edo",
-    "Salt": "v2ZNg6YiPVYm7LTr96qEMg==",
-    "HashPwd": "B5iY53jUT5l8159BUTw1dIeXWgsHre1IfvBxu7aHrYM=",
+    "UserName": "ciao",
+    "Salt": "4EyLnL4XaA5HocLAx1eNjQ==",
+    "HashPwd": "ekrVkCC6VThISGUCnjQCVYmO7WBfjLJGd+e19D5HrMg=",
     "Claims": [
-      "edo"
+      "ciao"
     ],
     "Preferences": {
       "theme": "light"
     }
   },
   {
-    "UserName": "edo",
-    "Salt": "EMKypCSm6hTTxW3eRETlQA==",
-    "HashPwd": "UWle1LuLVkLp13Kj03STK66G2AZ/KAmJkh2fZnzltAo=",
+    "UserName": "ciao",
+    "Salt": "kfTsZgpJ0rvq0PRbvOfMQg==",
+    "HashPwd": "3/vqq8cYR8Iym7iEBOtM5toxCf5RPL+rPlH9NPrZirM=",
     "Claims": [
-      "edo"
+      "ciao"
     ],
     "Preferences": {
       "theme": "green"

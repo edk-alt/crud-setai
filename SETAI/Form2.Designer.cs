@@ -52,6 +52,8 @@
             this.zonax.Name = "zonax";
             this.zonax.TabStop = false;
             this.zonax.Click += new System.EventHandler(this.zonax_Click);
+            this.zonax.MouseLeave += new System.EventHandler(this.zonax_MouseLeave);
+            this.zonax.MouseHover += new System.EventHandler(this.zonax_MouseHover);
             // 
             // prive
             // 
@@ -71,7 +73,8 @@
             resources.ApplyResources(this.zonay, "zonay");
             this.zonay.Name = "zonay";
             this.zonay.TabStop = false;
-            this.zonay.Click += new System.EventHandler(this.zonay_Click);
+            this.zonay.MouseLeave += new System.EventHandler(this.zonay_MouseLeave);
+            this.zonay.MouseHover += new System.EventHandler(this.zonay_MouseHover);
             // 
             // btn_chiudi
             // 
@@ -121,6 +124,8 @@
             this.zonaz.Name = "zonaz";
             this.zonaz.TabStop = false;
             this.zonaz.Click += new System.EventHandler(this.zonaz_Click);
+            this.zonaz.MouseLeave += new System.EventHandler(this.zonaz_MouseLeave);
+            this.zonaz.MouseHover += new System.EventHandler(this.zonaz_MouseHover);
             // 
             // Form2
             // 

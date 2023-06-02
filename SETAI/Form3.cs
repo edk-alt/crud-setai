@@ -63,6 +63,8 @@ namespace SETAI
         }
         #endregion
 
+
+
         LoginAccount[] eleAccounts;
         int num = 0;
 
@@ -138,6 +140,9 @@ namespace SETAI
             // FINE SETUP ---------------------------------------------------------------
         }
 
+
+
+
         private void btn_registra_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tb_user.Text) == true
@@ -152,7 +157,6 @@ namespace SETAI
             string pw = tb_pw.Text;
 
             //var eleAccounts = new LoginAccount[10];
-
             // INIZIO LOGIN ---------------------------------------------------------------
 
             
@@ -194,9 +198,13 @@ namespace SETAI
             }
             else
             {
+                Program.UserScelto = tb_user.Text;
                 MessageBox.Show("Utente riconosciuto");
                 Form1 form1 = new Form1();
                 form1.ShowDialog();
+
+
+
                 return;
             }
         }
