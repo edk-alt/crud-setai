@@ -32,7 +32,6 @@ namespace SETAI
             nuovoTavolo.zona = "Privé";
             MessageBox.Show("Privé prenotato");
             prive.BackColor = Color.Red; 
-            prive.ForeColor = Color.Blue;
         }
 
         private void zonaz_Click(object sender, EventArgs e)
@@ -40,15 +39,6 @@ namespace SETAI
             nuovoTavolo.zona = "NORD-OVEST";
             MessageBox.Show("Tavolo selezionato");
             zonaz.BackColor = Color.Red;
-            zonaz.ForeColor = Color.Blue;
-        }
-
-        private void zonay_Click(object sender, EventArgs e)
-        {
-            nuovoTavolo.zona = "EST";
-            MessageBox.Show("Tavolo selezionato");
-            zonay.BackColor = Color.Red;
-            zonay.ForeColor = Color.Blue;
         }
 
 
@@ -57,7 +47,7 @@ namespace SETAI
             nuovoTavolo.zona = "SUD";
             MessageBox.Show("Tavolo selezionato");
             zonax.BackColor = Color.Red;
-            zonax.ForeColor = Color.Blue;
+
         }
 
         private void prive_MouseHover(object sender, EventArgs e)
@@ -99,6 +89,13 @@ namespace SETAI
         private void zonaz_MouseLeave(object sender, EventArgs e)
         {
             zonaz.BackColor = Color.Transparent;
+        }
+
+        private void zonay_Click_1(object sender, EventArgs e)
+        {
+            nuovoTavolo.zona = "EST";
+            MessageBox.Show("Tavolo selezionato");
+            zonay.BackColor = Color.Red;
         }
     }
 }

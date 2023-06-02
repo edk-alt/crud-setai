@@ -123,14 +123,51 @@ namespace SETAI
 
         }
 
-        private void lbl_user_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
+            lbl_user.Text = "Accesso eseguito da: " + Program.UserScelto;
+        }
+
+        private void btn_cerca_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_cerca.Text) == true)
+            {
+                MessageBox.Show("Inserire il nome del tavolo");
+                return;
+            }
+
+            int k = funzioni.Cerca(eleTavoli, ref num, txt_cerca.Text);
+
+            txt_nome_mod.Text = eleTavoli[k].nome;
+            txt_tavolo_mod.Text = eleTavoli[k].tavolone;
+            txt_tel_mod.Text = eleTavoli[k].telefono.ToString();
+            txt_persone_mod.Text = eleTavoli[k].persone.ToString();
+            txt_portate_mod.Text = eleTavoli[k].portate.ToString();
+
             
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btn_modifica_Click(object sender, EventArgs e)
         {
-            lbl_user.Text = Program.UserScelto;
+            if(string.IsNullOrEmpty(txt_nome_mod.Text)==true ||
+               string.IsNullOrEmpty(txt_tel_mod.Text)== true ||
+               string.IsNullOrEmpty(txt_persone_mod.Text)==true ||
+               string.IsNullOrEmpty(txt_portate_mod.Text)==true ||
+               string.IsNullOrEmpty(txt_tavolo_mod.Text)==true)
+            {
+                MessageBox.Show("Inserire i dati");
+                return;
+            }
+
+            int k = funzioni.Modifica(eleTavoli, ref num, txt_nome_mod.Text);
+
+            eleTavoli[k].nome = txt_nome_mod.Text;
+            eleTavoli[k].tavolone = txt_tavolo_mod.Text;
+            eleTavoli[k].telefono = int.Parse( txt_tel_mod.Text );
+            eleTavoli[k].persone = int.Parse(txt_persone_mod.Text);
+            eleTavoli[k].portate = int.Parse(txt_portate_mod.Text);
+
+            MessageBox.Show("Dati modificati");
         }
     }
 }

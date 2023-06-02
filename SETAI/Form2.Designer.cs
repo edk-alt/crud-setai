@@ -48,6 +48,7 @@
             // zonax
             // 
             this.zonax.BackColor = System.Drawing.Color.Transparent;
+            this.zonax.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.zonax, "zonax");
             this.zonax.Name = "zonax";
             this.zonax.TabStop = false;
@@ -73,6 +74,7 @@
             resources.ApplyResources(this.zonay, "zonay");
             this.zonay.Name = "zonay";
             this.zonay.TabStop = false;
+            this.zonay.Click += new System.EventHandler(this.zonay_Click_1);
             this.zonay.MouseLeave += new System.EventHandler(this.zonay_MouseLeave);
             this.zonay.MouseHover += new System.EventHandler(this.zonay_MouseHover);
             // 

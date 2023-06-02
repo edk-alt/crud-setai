@@ -121,5 +121,39 @@ namespace SETAI
 
         }
 
+        public static int Cerca(Tavolo[] eleTavoli, ref int num, string tavolo)
+        {
+            int x = 0;
+            int k = -1;
+
+            while (x < num)
+            {
+                if (eleTavoli[x].tavolone == tavolo)
+                {
+                    k = x;
+                }
+                x++;
+            }
+
+            return k;
+        }
+
+        public static int Modifica(Tavolo[] eleTavoli, ref int num, string nome)
+        {
+            int x = 0;
+            int K = -1;
+
+            while (x < num)
+            {
+                if (eleTavoli[x].nome == nome)
+                {
+                    K = x;
+                }
+                x++;
+            }
+
+            return K;
+        }
+
     }
 }
