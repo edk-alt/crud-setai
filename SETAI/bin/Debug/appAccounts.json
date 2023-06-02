@@ -1,0 +1,84 @@
+[
+  {
+    "UserName": "edo",
+    "Salt": "J3zQNo2w8kMHrNzZwFXOUw==",
+    "HashPwd": "8ufli9jCzITsQ8fQguKqhJTVdLEwm4YrTNllIjh+PYE=",
+    "Claims": [
+      "edo"
+    ],
+    "Preferences": {
+      "theme": "dark"
+    }
+  },
+  {
+    "UserName": "edo",
+    "Salt": "nuT2YbQZ4YXSqEBx+ADxCA==",
+    "HashPwd": "GmdY/uf0sROofOOYognKqn93Uqu660i4snYdsw4OvUg=",
+    "Claims": [
+      "edo"
+    ],
+    "Preferences": {
+      "theme": "light"
+    }
+  },
+  {
+    "UserName": "edo",
+    "Salt": "oO2dXneXMe4kGrIt+wpfIQ==",
+    "HashPwd": "uHkS9Qf6xLRsD4meD5GB/PFwm39rSR/zcQiMmsAUcAo=",
+    "Claims": [
+      "edo"
+    ],
+    "Preferences": {
+      "theme": "green"
+    }
+  },
+  {
+    "UserName": null,
+    "Salt": null,
+    "HashPwd": null,
+    "Claims": null,
+    "Preferences": null
+  },
+  {
+    "UserName": null,
+    "Salt": null,
+    "HashPwd": null,
+    "Claims": null,
+    "Preferences": null
+  },
+  {
+    "UserName": null,
+    "Salt": null,
+    "HashPwd": null,
+    "Claims": null,
+    "Preferences": null
+  },
+  {
+    "UserName": null,
+    "Salt": null,
+    "HashPwd": null,
+    "Claims": null,
+    "Preferences": null
+  },
+  {
+    "UserName": null,
+    "Salt": null,
+    "HashPwd": null,
+    "Claims": null,
+    "Preferences": null
+  },
+  {
+    "UserName": null,
+    "Salt": null,
+    "HashPwd": null,
+    "Claims": null,
+    "Preferences": null
+  },
+  {
+    "UserName": null,
+    "Salt": null,
+    "HashPwd": null,
+    "Claims": null,
+    "Preferences": null
+  }
+]
