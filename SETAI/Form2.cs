@@ -59,5 +59,16 @@ namespace SETAI
             zonax.BackColor = Color.Red;
             zonax.ForeColor = Color.Blue;
         }
+
+        private void prive_MouseHover(object sender, EventArgs e)
+        {
+            prive.BackColor = Color.Blue;
+
+        }
+
+        private void prive_MouseLeave(object sender, EventArgs e)
+        {
+            prive.BackColor = Color.Transparent;
+        }
     }
 }

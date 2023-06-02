@@ -193,7 +193,7 @@
     <value>7</value>
   </data>
   <data name="btn_chiudi.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Modern No. 20, 11.25pt</value>
+    <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
   <data name="btn_chiudi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

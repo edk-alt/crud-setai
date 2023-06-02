@@ -61,6 +61,8 @@
             this.prive.Name = "prive";
             this.prive.TabStop = false;
             this.prive.Click += new System.EventHandler(this.prive_Click);
+            this.prive.MouseLeave += new System.EventHandler(this.prive_MouseLeave);
+            this.prive.MouseHover += new System.EventHandler(this.prive_MouseHover);
             // 
             // zonay
             // 

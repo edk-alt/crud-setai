@@ -148,8 +148,8 @@ namespace SETAI
                 return;
             }
 
-            string user = tb_registraUser.Text;
-            string pw = tb_registraPw.Text;
+            string user = tb_user.Text;
+            string pw = tb_pw.Text;
 
             //var eleAccounts = new LoginAccount[10];
 
