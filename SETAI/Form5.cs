@@ -30,6 +30,8 @@ namespace SETAI
                 return;
             }
 
+            
+
             if (int.TryParse(txt_telP.Text, out int tel) == false)
             {
                 MessageBox.Show("Errore");
@@ -42,6 +44,8 @@ namespace SETAI
 
             string nome = txt_nome.Text;
             string tavolo = txt_tavoloP.Text;
+
+            
 
             int x = 0;
             while (x < num)
@@ -64,19 +68,15 @@ namespace SETAI
             elePersone[n] = nuovodato;
             n++;
 
-
-        }
-
-        private void btn_vis_pers_Click(object sender, EventArgs e)
-        {
-            lb.Items.Clear();
-
             funzioni.VisualizzaPersone(elePersone, n, lb);
 
+
         }
 
+        private void Form5_Load(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }
 

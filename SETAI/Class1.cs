@@ -69,12 +69,13 @@ namespace SETAI
 
         public static void VisualizzaPersone(Persona[] elep, int num, ListBox lb)
         {
+            lb.Items.Clear();
+
             int x = 0;
 
             while (x < num)
             {
-                string risul = $"Nome: {elePersone[x].nome} Telefono: {elePersone[x].telefono} " +
-                               $"Tavolo: {eleTavoli[x].tavolone}";
+                string risul = $"Nome: {elePersone[x].nome} - Telefono: {elePersone[x].telefono} - Tavolo: {elePersone[x].taavolino}";
 
                 lb.Items.Add(risul);
                 x = x + 1;
