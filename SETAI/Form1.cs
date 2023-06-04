@@ -47,15 +47,19 @@ namespace SETAI
 
             
 
-            if (int.TryParse(tb_tel.Text, out int portate) == false)
-            {
-                MessageBox.Show("Errore");
-                return;
-            }
+            //if (int.TryParse(tb_tel.Text, out int portate) == false)
+            //{
+            //    MessageBox.Show("Errore");
+            //    return;
+            //}
+
+            
 
             string persone = tb_persone.Text;
             string nome = tb_nome.Text;
             string tavolo = tb_tavolo.Text;
+
+            string portate = tb_portate.Text;
 
             
 
@@ -76,7 +80,7 @@ namespace SETAI
             nuovoTavolo.telefono = tel;
             nuovoTavolo.tavolone = tavolo;
             nuovoTavolo.persone = int.Parse(persone);
-            nuovoTavolo.portate = portate;
+            nuovoTavolo.portate = int.Parse(portate);
             
 
             eleTavoli[num] = nuovoTavolo;
