@@ -202,6 +202,7 @@ namespace SETAI
                 MessageBox.Show("Utente riconosciuto");
                 Form1 form1 = new Form1();
                 form1.ShowDialog();
+                this.Close();
 
 
 
