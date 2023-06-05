@@ -312,7 +312,7 @@
             this.lbl_user.BackColor = System.Drawing.Color.Transparent;
             this.lbl_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_user.ForeColor = System.Drawing.Color.White;
-            this.lbl_user.Location = new System.Drawing.Point(105, 422);
+            this.lbl_user.Location = new System.Drawing.Point(93, 422);
             this.lbl_user.Name = "lbl_user";
             this.lbl_user.Size = new System.Drawing.Size(19, 29);
             this.lbl_user.TabIndex = 25;

@@ -129,7 +129,7 @@ namespace SETAI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lbl_user.Text = "Accesso eseguito da: " + Program.UserScelto;
+            lbl_user.Text = "Accesso: " + Program.UserScelto;
         }
 
         private void btn_cerca_Click(object sender, EventArgs e)
