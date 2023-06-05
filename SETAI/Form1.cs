@@ -35,25 +35,12 @@ namespace SETAI
                 return;
             }
 
-            //persone
-            //portate
-            //telefono
 
             if(int.TryParse(tb_tel.Text, out int tel) == false)
             {
                 MessageBox.Show("Errore");
                 return;
             }
-
-            
-
-            //if (int.TryParse(tb_tel.Text, out int portate) == false)
-            //{
-            //    MessageBox.Show("Errore");
-            //    return;
-            //}
-
-            
 
             string persone = tb_persone.Text;
             string nome = tb_nome.Text;
@@ -86,17 +73,12 @@ namespace SETAI
             eleTavoli[num] = nuovoTavolo;
             num++;
 
-
-            //tb_nome.Clear();
-            //tb_tel.Clear();
-            //tb_tavolo.Clear();
-            //tb_persone.Clear();
-            //tb_portate.Clear();
+            MessageBox.Show("Dati salvati correttamente");
+            funzioni.Visualizza(eleTavoli, num, lb);
         }
 
         private void btn_visual_Click(object sender, EventArgs e)
         {
-            lb.Items.Clear();
             funzioni.Visualizza(eleTavoli, num, lb);
         }
 
@@ -123,8 +105,6 @@ namespace SETAI
             int k = funzioni.Elimina(eleTavoli, ref num, txt_tavolo.Text);
 
             MessageBox.Show("Dato eliminato");
-
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -147,8 +127,6 @@ namespace SETAI
             txt_tel_mod.Text = eleTavoli[k].telefono.ToString();
             txt_persone_mod.Text = eleTavoli[k].persone.ToString();
             txt_portate_mod.Text = eleTavoli[k].portate.ToString();
-
-            
         }
 
         private void btn_modifica_Click(object sender, EventArgs e)
@@ -172,6 +150,22 @@ namespace SETAI
             eleTavoli[k].portate = int.Parse(txt_portate_mod.Text);
 
             MessageBox.Show("Dati modificati");
+        }
+
+        private void btn_chiudi_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_salva_file_Click(object sender, EventArgs e)
+        {
+            funzioni.Salva(eleTavoli, num, "Utenti.txt");
+        }
+
+        private void btn_carica_file_Click(object sender, EventArgs e)
+        {
+            lb.Items.Clear();
+            funzioni.Scrivi(eleTavoli, ref num, "Utenti.txt");
         }
     }
 }

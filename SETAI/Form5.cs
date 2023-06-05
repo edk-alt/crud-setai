@@ -30,8 +30,6 @@ namespace SETAI
                 return;
             }
 
-            
-
             if (int.TryParse(txt_telP.Text, out int tel) == false)
             {
                 MessageBox.Show("Errore");
@@ -41,11 +39,8 @@ namespace SETAI
                 //pero se è falsa la si mette dentro la MessBox
             }
 
-
             string nome = txt_nome.Text;
             string tavolo = txt_tavoloP.Text;
-
-            
 
             int x = 0;
             while (x < num)
@@ -69,14 +64,8 @@ namespace SETAI
             n++;
 
             funzioni.VisualizzaPersone(elePersone, n, lb);
-
-
         }
 
-        private void Form5_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

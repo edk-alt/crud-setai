@@ -53,6 +53,7 @@ namespace SETAI
 
         public static void Visualizza(Tavolo[] eleTavoli, int num, ListBox lb)
         {
+            lb.Items.Clear();
             int x = 0;
 
             while (x < num)
@@ -82,23 +83,53 @@ namespace SETAI
             }
         }
 
-        public static void Salva(Login[] eleUtenti, int nn)
+        public static void Salva(Tavolo[] eleTavoli, int num, string filename)
         {
             string pathFile = "utenti.txt";
-            StreamWriter mioFile;
-            mioFile = new StreamWriter(pathFile);
+            StreamWriter miofile;
+            miofile = new StreamWriter(pathFile);
             int x = 0;
-            while (x < nn)
+            while (x < num)
             {
-                Login tmp = eleUtenti[x];
-                mioFile.WriteLine(tmp.Username);
-                mioFile.WriteLine(tmp.password);
-                mioFile.WriteLine(" ");
+                Tavolo tmp = eleTavoli[x];
+                miofile.WriteLine(tmp.nome);
+                miofile.WriteLine(tmp.telefono);
+                miofile.WriteLine(tmp.zona);
+                miofile.WriteLine(tmp.tavolone);
+                miofile.WriteLine(tmp.persone);
+                miofile.WriteLine(tmp.portate);
+                miofile.WriteLine(" ");
                 x++;
             }
-            mioFile.Close();
+            miofile.Close();
+            MessageBox.Show("Dati salvati con successo");
+            
         }
 
+        public static void Scrivi(Tavolo[] eleTavoli, ref int num, string filename)
+        {
+            string pathFile = "utenti.txt";
+            StreamReader miofile;
+            miofile= new StreamReader(pathFile);
+
+            while (num < 100 && miofile.EndOfStream == false)
+            {
+                Tavolo nuovodato = default;
+
+                nuovodato.nome = miofile.ReadLine();
+                nuovodato.telefono = int.Parse(miofile.ReadLine());
+                nuovodato.zona = miofile.ReadLine();
+                nuovodato.tavolone = miofile.ReadLine();
+                nuovodato.persone = int.Parse(miofile.ReadLine());
+                nuovodato.portate = int.Parse(miofile.ReadLine());
+                miofile.ReadLine();
+
+                eleTavoli[num] = nuovodato;
+                num = num + 1;
+
+            }
+            miofile.Close();
+        }
 
         public static int Elimina(Tavolo[] eleTavoli, ref int num, string tavolo)
         {

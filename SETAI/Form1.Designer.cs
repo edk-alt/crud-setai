@@ -66,6 +66,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.btn_cerca = new System.Windows.Forms.Button();
             this.btn_modifica = new System.Windows.Forms.Button();
+            this.btn_salva_file = new System.Windows.Forms.Button();
+            this.btn_carica_file = new System.Windows.Forms.Button();
+            this.btn_chiudi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -455,13 +458,50 @@
             // 
             this.btn_modifica.BackColor = System.Drawing.Color.White;
             this.btn_modifica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_modifica.Location = new System.Drawing.Point(1167, 545);
+            this.btn_modifica.Location = new System.Drawing.Point(985, 397);
             this.btn_modifica.Name = "btn_modifica";
             this.btn_modifica.Size = new System.Drawing.Size(161, 58);
             this.btn_modifica.TabIndex = 39;
             this.btn_modifica.Text = "MODIFICA";
             this.btn_modifica.UseVisualStyleBackColor = false;
             this.btn_modifica.Click += new System.EventHandler(this.btn_modifica_Click);
+            // 
+            // btn_salva_file
+            // 
+            this.btn_salva_file.BackColor = System.Drawing.Color.White;
+            this.btn_salva_file.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salva_file.Location = new System.Drawing.Point(1054, 531);
+            this.btn_salva_file.Name = "btn_salva_file";
+            this.btn_salva_file.Size = new System.Drawing.Size(161, 58);
+            this.btn_salva_file.TabIndex = 40;
+            this.btn_salva_file.Text = "SALVA";
+            this.btn_salva_file.UseVisualStyleBackColor = false;
+            this.btn_salva_file.Click += new System.EventHandler(this.btn_salva_file_Click);
+            // 
+            // btn_carica_file
+            // 
+            this.btn_carica_file.BackColor = System.Drawing.Color.White;
+            this.btn_carica_file.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.btn_carica_file.Location = new System.Drawing.Point(1221, 533);
+            this.btn_carica_file.Name = "btn_carica_file";
+            this.btn_carica_file.Size = new System.Drawing.Size(161, 58);
+            this.btn_carica_file.TabIndex = 41;
+            this.btn_carica_file.Text = "CARICA da file";
+            this.btn_carica_file.UseVisualStyleBackColor = false;
+            this.btn_carica_file.Click += new System.EventHandler(this.btn_carica_file_Click);
+            // 
+            // btn_chiudi
+            // 
+            this.btn_chiudi.BackColor = System.Drawing.Color.Red;
+            this.btn_chiudi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btn_chiudi.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_chiudi.Location = new System.Drawing.Point(1320, 610);
+            this.btn_chiudi.Name = "btn_chiudi";
+            this.btn_chiudi.Size = new System.Drawing.Size(110, 37);
+            this.btn_chiudi.TabIndex = 42;
+            this.btn_chiudi.Text = "CHIUDI";
+            this.btn_chiudi.UseVisualStyleBackColor = false;
+            this.btn_chiudi.Click += new System.EventHandler(this.btn_chiudi_Click);
             // 
             // Form1
             // 
@@ -470,6 +510,9 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1459, 671);
+            this.Controls.Add(this.btn_chiudi);
+            this.Controls.Add(this.btn_carica_file);
+            this.Controls.Add(this.btn_salva_file);
             this.Controls.Add(this.btn_modifica);
             this.Controls.Add(this.btn_cerca);
             this.Controls.Add(this.txt_cerca);
@@ -558,6 +601,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btn_cerca;
         private System.Windows.Forms.Button btn_modifica;
+        private System.Windows.Forms.Button btn_salva_file;
+        private System.Windows.Forms.Button btn_carica_file;
+        private System.Windows.Forms.Button btn_chiudi;
     }
 }
 

@@ -77,10 +77,6 @@ namespace SETAI
                 return;
             }
 
-
-            string username = tb_user.Text;
-            string password = tb_pw.Text;
-
             string user = tb_registraUser.Text;
             string pw = tb_registraPw.Text;
 
@@ -139,9 +135,6 @@ namespace SETAI
             MessageBox.Show("Account creato correttamente;");
             // FINE SETUP ---------------------------------------------------------------
         }
-
-
-
 
         private void btn_registra_Click(object sender, EventArgs e)
         {
@@ -203,9 +196,6 @@ namespace SETAI
                 Form1 form1 = new Form1();
                 form1.ShowDialog();
                 this.Close();
-
-
-
                 return;
             }
         }
