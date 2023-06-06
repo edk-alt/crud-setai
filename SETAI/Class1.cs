@@ -106,7 +106,7 @@ namespace SETAI
             
         }
 
-        public static void Scrivi(Tavolo[] eleTavoli, ref int num, string filename)
+        public static void Scrivi(Tavolo[] eleTavoli, ref int num, string filename, ListBox lb)
         {
             string pathFile = "utenti.txt";
             StreamReader miofile;
@@ -128,6 +128,7 @@ namespace SETAI
                 num = num + 1;
 
             }
+            funzioni.Visualizza(eleTavoli, num, lb);
             miofile.Close();
         }
 

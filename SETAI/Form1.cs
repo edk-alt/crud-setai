@@ -165,7 +165,7 @@ namespace SETAI
         private void btn_carica_file_Click(object sender, EventArgs e)
         {
             lb.Items.Clear();
-            funzioni.Scrivi(eleTavoli, ref num, "Utenti.txt");
+            funzioni.Scrivi(eleTavoli, ref num, "Utenti.txt", lb);
         }
     }
 }
